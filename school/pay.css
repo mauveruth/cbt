@@ -1,0 +1,245 @@
+body{margin:0!important; padding:0!important; font-family:'Quicksand', sans-serif; background-color:#fff; color:#333;}
+/* ECEDEF*/
+*{
+	box-sizing: border-box;
+}
+
+.mobile{
+	display:none;
+}
+
+
+
+/*** content*/
+
+img.background{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+}
+div.background{
+    position:fixed;
+    width:100%;
+    height:40vh;
+    top:60vh;
+    background:#fff;
+}
+
+.header{
+    z-index:10000;
+    font-family:'Josefin Sans', sans-serif;
+    color:#fff;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:5vh 5vw;
+    border-bottom:1px #e0e0e0 solid;
+    text-align:right;
+    transition:all .5s ease-in-out;
+    background-color:transparent;
+}
+.header a{
+    margin-left:2vw;
+}
+.active{
+    color:#ff0;
+}
+.header .logo{
+    float:left;
+}
+
+
+
+
+/***content */
+.content{
+    position:absolute;
+    width:95vw;
+    height:80vh;
+    top:60vh;
+    left:2.5vw;
+    background:#fff;
+    text-align:left;
+    padding-top:15vh;
+}
+
+.content .login, .content .sidenav{
+    display:inline-block;
+    text-align:left;
+}
+
+.content .sidenav{
+    position:sticky;
+    top:30vh;
+    width:20vw;
+    margin:0 5vw 0 10vw;
+    left:0vw;
+}
+
+.content .sidenav p{
+    cursor:pointer;
+    width:70%;
+    padding:2vh 0;
+    border-bottom:1px #e0315a solid;
+    transition:all .3s ease-in-out;
+}
+.content .sidenav p:hover{
+    width:100%;
+}
+.content .sidenav p.active{
+    border-bottom:3px #e0315a solid;
+    color:#333;
+}
+
+.content .login{
+    position:absolute;
+    top:15vh;
+    width:40vw;
+}
+
+.content .login .head{
+    font-size:3vw;
+    font-weight:bold;
+    font-family:'Josefin Sans', sans-serif;
+    color:#e0315a;
+}
+
+.content .login form{
+    margin-top:10vh;
+}
+
+
+
+
+.content .login form label{
+    font-weight:bolder;
+    font-size:1vw;
+}
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top:3px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  position: relative;
+  margin-right: 0.5rem;
+  z-index: 1000;
+}
+.option-input:hover {
+  background: #9faab7;
+}
+.option-input:checked {
+  background: #e0315a;
+}
+.option-input:checked::before {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  display: inline-block;
+  font-size: 26.6666666667px;
+  text-align: center;
+  line-height: 20px;
+}
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #e0315a;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+.option-input.radio {
+  border-radius: 50%;
+}
+.option-input.radio::after {
+  border-radius: 50%;
+}
+@-webkit-keyframes click-wave {
+  0% {
+    height: 20px;
+    width: 20px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 100px;
+    width: 100px;
+    margin-left: -40px;
+    margin-top: -40px;
+    opacity: 0.0;
+  }
+}
+@-moz-keyframes click-wave {
+  0% {
+    height: 20px;
+    width: 20px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 100px;
+    width: 100px;
+    margin-left: -40px;
+    margin-top: -40px;
+    opacity: 0.0;
+  }
+}
+@keyframes click-wave {
+  0% {
+    height: 20px;
+    width: 20px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 100px;
+    width: 100px;
+    margin-left: -40px;
+    margin-top: -40px;
+    opacity: 0.0;
+  }
+}
+
+
+
+
+
+.content .login form div.space{
+    margin:6vh 0;
+}
+
+.content .login form .submit{
+    transition:all .5s ease-in-out;
+    font-size:1.2vw;
+    padding:2vh 2vw;
+    border-radius:50px;
+    margin-top:2.5vh;
+    color:#fff;
+    background:#e0315a;
+    cursor:pointer;
+    border:none
+}
+
+.content .login form .submit:hover{
+    padding:2vh 3vw;
+}

@@ -1,0 +1,299 @@
+body{margin:0!important; padding:0!important; font-family:'Quicksand', sans-serif; background-color:#fff; color:#333;}
+/* ECEDEF*/
+*{
+  box-sizing: border-box;
+}
+
+.desktop{
+  display:none;
+}
+
+
+
+::-webkit-scrollbar{
+    width:0vw;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #333; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar:hover {
+    width:1vw;
+}
+
+
+/*** content*/
+
+img.background{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+}
+div.background{
+    position:fixed;
+    width:100%;
+    height:40vh;
+    top:60vh;
+    background:#fff;
+}
+
+
+
+/***header */
+.header2{
+    font-size:6vw;
+    z-index:10000;
+    font-family:'Josefin Sans', sans-serif;
+    color:#fff;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:3vh 5vw;
+    border-bottom:1px #e0e0e0 solid;
+    text-align:right;
+    transition:all .5s ease-in-out;
+    background-color:transparent;
+}
+.header2 .menu-button{
+    float:left;
+}
+.header2 a{
+    cursor:pointer;
+}
+.menu{
+    text-align:center;
+    height:100%;
+    width:0;
+    position:fixed;
+    z-index:10;
+    top:0;
+    left:0;
+    background:#111;
+    overflow-x:hidden;
+    transition:1s;
+    padding-top:15vh;
+}
+.menu a{
+    padding:3vh 0;
+    text-decoration:none;
+    font-size:4vw;
+    color:#818181;
+    display:block;
+    transition:.7s;
+}
+.menu .close{
+    color:#ff0;
+    font-size:10vw;
+}
+.menu .active{
+    color:#fff;
+}
+
+
+
+.loginNav{
+    text-align:center;
+    height:100%;
+    width:0%;
+    position:fixed;
+    z-index:10;
+    top:0;
+    right:0;
+    background:#111;
+    overflow-x:hidden;
+    transition:1s;
+    padding-top:15vh;
+}
+.loginNav a{
+    padding:3vh 0;
+    text-decoration:none;
+    font-size:4vw;
+    color:#818181;
+    display:block;
+    transition:.7s;
+}
+.loginNav .close{
+    color:#ff0;
+    font-size:10vw;
+}
+.loginNav .active{
+    color:#fff;
+}
+
+
+
+/***content */
+.content{
+    position:absolute;
+    width:95vw;
+    top:60vh;
+    left:2.5vw;
+    background:#fff;
+    text-align:left;
+    padding:10vh 0;
+}
+
+.content .login{
+    text-align:center;
+}
+
+.content .login{
+    width:100%;
+}
+
+.content .login .head{
+    font-size:10vw;
+    font-weight:bold;
+    font-family:'Josefin Sans', sans-serif;
+    color:#e0315a;
+}
+
+.content .login form{
+    margin-top:10vh;
+}
+
+
+
+
+
+
+
+.content .login form label{
+    font-weight:bolder;
+    font-size:3vw;
+}
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top:3px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  position: relative;
+  margin-right: 0.5rem;
+  z-index: 1000;
+}
+.option-input:hover {
+  background: #9faab7;
+}
+.option-input:checked {
+  background: #e0315a;
+}
+.option-input:checked::before {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  display: inline-block;
+  font-size: 26.6666666667px;
+  text-align: center;
+  line-height: 20px;
+}
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #e0315a;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+.option-input.radio {
+  border-radius: 50%;
+}
+.option-input.radio::after {
+  border-radius: 50%;
+}
+@-webkit-keyframes click-wave {
+  0% {
+    height: 20px;
+    width: 20px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 100px;
+    width: 100px;
+    margin-left: -40px;
+    margin-top: -40px;
+    opacity: 0.0;
+  }
+}
+@-moz-keyframes click-wave {
+  0% {
+    height: 20px;
+    width: 20px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 100px;
+    width: 100px;
+    margin-left: -40px;
+    margin-top: -40px;
+    opacity: 0.0;
+  }
+}
+@keyframes click-wave {
+  0% {
+    height: 20px;
+    width: 20px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 100px;
+    width: 100px;
+    margin-left: -40px;
+    margin-top: -40px;
+    opacity: 0.0;
+  }
+}
+
+
+
+
+
+
+
+.content .login form div.space{
+    margin:6vh 0;
+}
+
+.content .login form .submit{
+    outline:none;
+    transition:all .5s ease-in-out;
+    font-size:3vw;
+    text-align:center;
+    padding:2vh 0;
+    width:70%;
+    border-radius:50px;
+    margin-top:2.5vh;
+    color:#fff;
+    background:#e0315a;
+    cursor:pointer;
+    border:none
+}
+
+.content .login form .submit:focus{
+    width:80%;
+}

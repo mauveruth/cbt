@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Record</title>
+	<link type="text/css" media='(max-width: 500px)' rel="stylesheet" href="record-mobile.css" />
+	<link type="text/css" media='(min-width: 500px)' rel='stylesheet' href='record.css' />
+	<meta name="description" content="homepage">
+	<link rel="shortcut icon" href="omowunmi/home/logo.png" type="image/png">
+	<meta charset="UTF-8">
+	<meta name="author" content="Joshua Equere">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Muli|Anton|Josefin+Sans|Quicksand|Comfortaa|Kanit|Varela+Round" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="jquery-2.1.0.min.js"></script>
+	<script src="float-panel.js"></script>
+</head>
+<body>
+
+<div class="desktop">
+
+	<img class="background" src="pictures/background.png" />
+	<div class="background"></div>
+
+	<!--- header-->
+	<div class="header">
+		<a>HOME</a>
+		<a>ABOUT</a>
+		<a>COURSES</a>
+		<a class="active">ADMISSION</a>
+		<a>CONTACT</a>
+
+		<b class="logo">LOGO</b>
+	</div>
+	<script>
+		$(document).ready(function(){
+		  $(window).scroll(function(){
+		  	var scroll = $(window).scrollTop();
+			  if (scroll > 150) {
+			    $(".header").css("background" , "#001f51");
+			  }
+
+			  else{
+				  $(".header").css("background" , "none");  	
+			  }
+		  })
+		})
+	</script>
+
+	<!--- content-->
+	<div class="content">
+
+		<div class="sidenav">
+			<p class="logout">LOGOUT</p>
+			<p>MY PROFILE</p>
+			<p class="active">ADD RECORD</p>
+			<p>PAY FEES</p>
+		</div>
+
+
+		<div class="login">
+			<a class="head">ADD RECORD</a><br />
+
+			<form>
+				<label for="fullname">FULL NAME</label><br />
+				<input class="textSpace" type="text" id="fullname" name="fullname" placeholder="Your full name here..." required />
+
+				<div class="space"></div>
+
+				<label for="fullname">GENDER</label><br />
+				<select name="gender" required>
+					<option value="">Select a gender</option>
+					<option value="male">MALE</option>
+					<option value="female">FEMALE</option>
+				</select>
+
+				<div class="space"></div>
+
+				<label for="fullname">STATE OF ORIGIN</label><br />
+				<select name="state" required>
+              		<option value="">Select a state</option>
+					<option value="ANAMBRA">ANAMBRA</option>
+						<option value="ABIA">ABIA</option>
+                        <option value="ABUJA">ABUJA</option>
+                        <option value="ADAMAWA">ADAMAWA</option>
+                        <option value="AKWA-IBOM">AKWA-IBOM</option>
+                        <option value="BAUCHI">BAUCHI</option>
+                        <option value="BAYELSA">BAYELSA</option>
+                        <option value="BENUE">BENUE</option>
+                        <option value="BORNO">BORNO</option>
+                        <option value="CROSS-RIVER">CROSS-RIVER</option>
+                        <option value="DELTA">DELTA</option>
+                        <option value="EBONYI">EBONYI</option>
+                        <option value="EKITI">EKITI</option>
+                        <option value="EDO">EDO</option>
+                        <option value="ENUGU">ENUGU</option>
+                        <option value="GOMBE">GOMBE</option>
+                        <option value="IMO">IMO</option>
+                        <option value="JIGAWA">JIGAWA</option>
+                        <option value="KANO">KANO</option>
+                        <option value="KADUNA">KADUNA</option>
+                        <option value="KATSINA">KATSINA</option>
+                        <option value="KEBBI">KEBBI</option>
+                        <option value="KWARA">KWARA</option>
+                        <option value="KOGI">KOGI</option>
+                        <option value="LAGOS">LAGOS</option>
+                        <option value="NASARAWA">NASARAWA</option>
+                        <option value="NIGER">NIGER</option>
+                        <option value="ONDO">ONDO</option>
+                        <option value="OGUN">OGUN</option>
+                        <option value="OSUN">OSUN</option>
+                        <option value="OYO">OYO</option>
+                        <option value="PLATEAU">PLATEAU</option>
+                        <option value="RIVERS">RIVERS</option>
+                        <option value="SOKOTO">SOKOTO</option>
+                        <option value="TARABA">TARABA</option>
+                        <option value="YOBE">YOBE</option>
+                        <option value="ZAMFARA">ZAMFARA</option>
+				</select>
+
+				<div class="space"></div>
+
+				<label for="phone">PHONE NUMBER</label><br />
+				<input class="textSpace" type="text" id="phone" name="phone" placeholder="Your phone number here..." required />
+
+				<div class="space"></div>
+
+				<label for="sponsorsname">SPONSOR'S NAME</label><br />
+				<input class="textSpace" type="text" id="sponsorsname" name="sponsorsname" placeholder="Your sponsor's name here..." required />
+
+				<div class="space"></div>
+
+				<label for="sponsorsname">SPONSOR'S NAME</label><br />
+				<input class="textSpace" type="text" id="sponsorsname" name="sponsorsname" placeholder="Your sponsor's name here..." required />
+
+				<div class="space"></div>
+
+				<label for="sponsorsphone">SPONSOR'S PHONE NUMBER</label><br />
+				<input class="textSpace" type="text" id="sponsorsphone" name="sponsorsphone" placeholder="Your sponsor's phone number here..." required />
+
+				<div class="space"></div>
+
+				<label for="email">EMAIL</label><br />
+				<input class="textSpace" type="text" id="email" name="email" placeholder="Your email here..." required />
+
+				<div class="space"></div>
+
+				<label for="address">ADDRESS</label><br />
+				<input class="textSpace" type="text" id="address" name="address" placeholder="Your address here..." required />
+
+				<div class="space"></div>
+
+				<label for="fullname">LEVEL</label><br />
+				<select name="level" required>
+                   <option value="">Select a level</option>
+					<option value="3s">HND1</option>					
+					<option value="4">HND2</option>					
+					<option value="1">ND1</option>					
+					<option value="2">ND2</option>	
+				</select>
+
+				<div class="space"></div>
+
+				<label for="registration">REGISTRATION NUMBER</label><br />
+				<input class="textSpace" type="text" id="registration" name="registration" placeholder="Your registration number here..." required />
+
+				<div class="space"></div>
+
+				<label for="fullname">DEPARTMENT</label><br />
+				<select name="department" required>
+			      <option value="">Select Department</option>
+	  			      <option value="9">ACCOUNTANCY</option>
+	  			      <option value="4">AGRICULTURAL AND BIO-ENVIRONMENTAL ENGR TECH</option>
+	  			      <option value="2">AGRICULTURAL ENGINEERING</option>
+	  			      <option value="15">AGRICULTURAL EXTENSION AND MANAGEMENT</option>
+	  			      <option value="19">AGRICULTURAL TECHNOLOGY</option>
+	  			      <option value="13">ANIMAL HEALTH AND PRODUCTION TECHNOLOGY</option>
+	  			      <option value="17">ANIMAL PRODUCTION TECHNOLOGY</option>
+	  			      <option value="10">BUSINESS ADMINISTRATION AND MANAGEMENT</option>
+	  			      <option value="20">CO-OPERATIVE ECONOMICS AND MANAGEMENT</option>
+	  			      <option value="6">COMPUTER SCIENCE TECHNOLOGY</option>
+	  			      <option value="14">CROP PRODUCTION TECHNOLOGY</option>
+	  			      <option value="21">ENVIRONMENTAL MANAGEMENT TECHNOLOGY</option>
+	  			      <option value="3">FISHERIES TECHNOLOGY</option>
+	  			      <option value="5">HOME AND RURAL ECONOMICS</option>
+	  			      <option value="11">HORTICULTURAL TECHNOLOGY</option>
+	  			      <option value="16">HORTICULTURE AND LANDSCAPE TECHNOLOGY</option>
+	  			      <option value="7">MARKETING</option>
+	  			      <option value="18">PEST MANAGEMENT TECHNOLOGY</option>
+	  			      <option value="8">PUBLIC ADMINISTRATION</option>
+	  			      <option value="1">SCIENCE LABORATORY TECHNOLOGY</option>
+	  			      <option value="12">STATISTICS</option>	
+				</select>
+
+				<div class="space"></div>
+
+				<label for="passport">PASSPORT PHOTOGRAPH</label><br />
+				<input class="passport" type="button" id="loadFileXml" value="Upload your passport photograph..." onclick="document.getElementById('passport').click();" />
+				<input style="display:none;" class="textSpace" type="file" id="passport" name="passport" placeholder="UPLOAD PASSPORT" accept="image/*" onchange="readURL(this);" required /><br />
+				<img id="upload" src="pictures/upload.png" alt="YOUR PASSPORT HERE" />
+				<script>
+				     function readURL(input) {
+			            if (input.files && input.files[0]) {
+			                var reader = new FileReader();
+
+			                reader.onload = function (e) {
+			                    $('#upload')
+			                        .attr('src', e.target.result);
+			                };
+
+			                reader.readAsDataURL(input.files[0]);
+			            }
+			        }
+				</script>
+
+				<br />
+
+				<input class="submit" type="submit" value="SUBMIT" />			
+			</form>
+		</div>
+
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="mobile">
+
+	<!-- background-->
+	<img class="background" src="pictures/background2.png" />
+	<div class="background"></div>
+
+
+	<!-- header-->
+	<div class="header2">
+
+		<!--- menu-->
+		<a class="menu-button" onclick="openMenu()"><i class="fas fa-bars"></i></a>
+		<div id="menu" class="menu">
+			<a href="javascript:void(0)" class="close" onclick="closeMenu()">&times;</a>
+			<a href="#">HOME</a>
+			<a href="#">ABOUT</a>
+			<a href="#">COURSES</a>
+			<a class="active" href="#">ADMISSION</a>
+			<a href="#">CONTACT</a>
+		</div>
+		<script>
+		function openMenu() {
+		    document.getElementById("menu").style.width = "100vw";
+		}
+
+		function closeMenu() {
+		    document.getElementById("menu").style.width = "0";
+		}
+		</script>
+
+
+		<!--- login-->
+		<a class="login-button" onclick="openLogin()"><i class="fas fa-user"></i></a>
+		<div id="login" class="loginNav">
+			<a href="javascript:void(0)" class="close" onclick="closeLogin()">&times;</a>
+			<a href="#">LOGOUT</a>
+			<a href="#">MY PROFILE</a>
+			<a class="active" href="#">ADD RECORD</a>
+			<a href="#">PAY FEES</a>
+		</div>
+		<script>
+		function openLogin() {
+		    document.getElementById("login").style.width = "100vw";
+		}
+
+		function closeLogin() {
+		    document.getElementById("login").style.width = "0";
+		}
+		</script>
+
+	</div>
+	<script>
+		$(document).ready(function(){
+		  $(window).scroll(function(){
+		  	var scroll = $(window).scrollTop();
+			  if (scroll > 30) {
+			    $(".header2").css("background" , "#001f51");
+			  }
+
+			  else{
+				  $(".header2").css("background" , "none");  	
+			  }
+		  })
+		})
+	</script>
+
+
+	<!--- content-->
+	<div class="content">
+
+
+		<div class="login">
+			<a class="head">ADD<br />RECORD</a><br />
+
+			<form>
+				<label for="fullname">FULL NAME</label><br />
+				<input class="textSpace" type="text" id="fullname" name="fullname" placeholder="Your full name here..." required />
+
+				<div class="space"></div>
+
+				<label for="fullname">GENDER</label><br />
+				<select name="gender" required>
+					<option value="">Select a gender</option>
+					<option value="male">MALE</option>
+					<option value="female">FEMALE</option>
+				</select>
+
+				<div class="space"></div>
+
+				<label for="fullname">STATE OF ORIGIN</label><br />
+				<select name="state" required>
+              		<option value="">Select a state</option>
+					<option value="ANAMBRA">ANAMBRA</option>
+						<option value="ABIA">ABIA</option>
+                        <option value="ABUJA">ABUJA</option>
+                        <option value="ADAMAWA">ADAMAWA</option>
+                        <option value="AKWA-IBOM">AKWA-IBOM</option>
+                        <option value="BAUCHI">BAUCHI</option>
+                        <option value="BAYELSA">BAYELSA</option>
+                        <option value="BENUE">BENUE</option>
+                        <option value="BORNO">BORNO</option>
+                        <option value="CROSS-RIVER">CROSS-RIVER</option>
+                        <option value="DELTA">DELTA</option>
+                        <option value="EBONYI">EBONYI</option>
+                        <option value="EKITI">EKITI</option>
+                        <option value="EDO">EDO</option>
+                        <option value="ENUGU">ENUGU</option>
+                        <option value="GOMBE">GOMBE</option>
+                        <option value="IMO">IMO</option>
+                        <option value="JIGAWA">JIGAWA</option>
+                        <option value="KANO">KANO</option>
+                        <option value="KADUNA">KADUNA</option>
+                        <option value="KATSINA">KATSINA</option>
+                        <option value="KEBBI">KEBBI</option>
+                        <option value="KWARA">KWARA</option>
+                        <option value="KOGI">KOGI</option>
+                        <option value="LAGOS">LAGOS</option>
+                        <option value="NASARAWA">NASARAWA</option>
+                        <option value="NIGER">NIGER</option>
+                        <option value="ONDO">ONDO</option>
+                        <option value="OGUN">OGUN</option>
+                        <option value="OSUN">OSUN</option>
+                        <option value="OYO">OYO</option>
+                        <option value="PLATEAU">PLATEAU</option>
+                        <option value="RIVERS">RIVERS</option>
+                        <option value="SOKOTO">SOKOTO</option>
+                        <option value="TARABA">TARABA</option>
+                        <option value="YOBE">YOBE</option>
+                        <option value="ZAMFARA">ZAMFARA</option>
+				</select>
+
+				<div class="space"></div>
+
+				<label for="phone">PHONE NUMBER</label><br />
+				<input class="textSpace" type="text" id="phone" name="phone" placeholder="Your phone number here..." required />
+
+				<div class="space"></div>
+
+				<label for="sponsorsname">SPONSOR'S NAME</label><br />
+				<input class="textSpace" type="text" id="sponsorsname" name="sponsorsname" placeholder="Your sponsor's name here..." required />
+
+				<div class="space"></div>
+
+				<label for="sponsorsname">SPONSOR'S NAME</label><br />
+				<input class="textSpace" type="text" id="sponsorsname" name="sponsorsname" placeholder="Your sponsor's name here..." required />
+
+				<div class="space"></div>
+
+				<label for="sponsorsphone">SPONSOR'S PHONE NUMBER</label><br />
+				<input class="textSpace" type="text" id="sponsorsphone" name="sponsorsphone" placeholder="Your sponsor's phone number here..." required />
+
+				<div class="space"></div>
+
+				<label for="email">EMAIL</label><br />
+				<input class="textSpace" type="text" id="email" name="email" placeholder="Your email here..." required />
+
+				<div class="space"></div>
+
+				<label for="address">ADDRESS</label><br />
+				<input class="textSpace" type="text" id="address" name="address" placeholder="Your address here..." required />
+
+				<div class="space"></div>
+
+				<label for="fullname">LEVEL</label><br />
+				<select name="level" required>
+                   <option value="">Select a level</option>
+					<option value="3s">HND1</option>					
+					<option value="4">HND2</option>					
+					<option value="1">ND1</option>					
+					<option value="2">ND2</option>	
+				</select>
+
+				<div class="space"></div>
+
+				<label for="registration">REGISTRATION NUMBER</label><br />
+				<input class="textSpace" type="text" id="registration" name="registration" placeholder="Your registration number here..." required />
+
+				<div class="space"></div>
+
+				<label for="fullname">DEPARTMENT</label><br />
+				<select name="department" required>
+			      <option value="">Select Department</option>
+	  			      <option value="9">ACCOUNTANCY</option>
+	  			      <option value="4">AGRICULTURAL AND BIO-ENVIRONMENTAL ENGR TECH</option>
+	  			      <option value="2">AGRICULTURAL ENGINEERING</option>
+	  			      <option value="15">AGRICULTURAL EXTENSION AND MANAGEMENT</option>
+	  			      <option value="19">AGRICULTURAL TECHNOLOGY</option>
+	  			      <option value="13">ANIMAL HEALTH AND PRODUCTION TECHNOLOGY</option>
+	  			      <option value="17">ANIMAL PRODUCTION TECHNOLOGY</option>
+	  			      <option value="10">BUSINESS ADMINISTRATION AND MANAGEMENT</option>
+	  			      <option value="20">CO-OPERATIVE ECONOMICS AND MANAGEMENT</option>
+	  			      <option value="6">COMPUTER SCIENCE TECHNOLOGY</option>
+	  			      <option value="14">CROP PRODUCTION TECHNOLOGY</option>
+	  			      <option value="21">ENVIRONMENTAL MANAGEMENT TECHNOLOGY</option>
+	  			      <option value="3">FISHERIES TECHNOLOGY</option>
+	  			      <option value="5">HOME AND RURAL ECONOMICS</option>
+	  			      <option value="11">HORTICULTURAL TECHNOLOGY</option>
+	  			      <option value="16">HORTICULTURE AND LANDSCAPE TECHNOLOGY</option>
+	  			      <option value="7">MARKETING</option>
+	  			      <option value="18">PEST MANAGEMENT TECHNOLOGY</option>
+	  			      <option value="8">PUBLIC ADMINISTRATION</option>
+	  			      <option value="1">SCIENCE LABORATORY TECHNOLOGY</option>
+	  			      <option value="12">STATISTICS</option>	
+				</select>
+
+				<div class="space"></div>
+
+				<label for="passport">PASSPORT PHOTOGRAPH</label><br />
+				<input class="passport" type="button" id="loadFileXml" value="Upload your passport photograph..." onclick="document.getElementById('passport').click();" />
+				<input style="display:none;" class="textSpace" type="file" id="passport" name="passport" placeholder="UPLOAD PASSPORT" accept="image/*" onchange="readURL(this);" required /><br />
+				<img id="upload1" src="pictures/upload.png" alt="YOUR PASSPORT HERE" />
+				<script>
+				     function readURL(input) {
+			            if (input.files && input.files[0]) {
+			                var reader = new FileReader();
+
+			                reader.onload = function (e) {
+			                    $('#upload')
+			                        .attr('src', e.target.result);
+			                };
+
+			                reader.readAsDataURL(input.files[0]);
+			            }
+			        }
+				</script>
+
+				<br />
+
+				<input class="submit" type="submit" value="SUBMIT" />			
+			</form>
+		</div>
+
+	</div>
+
+
+</div>
+
+
+</body>

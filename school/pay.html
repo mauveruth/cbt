@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Pay fees</title>
+	<link type="text/css" media='(max-width: 500px)' rel="stylesheet" href="pay-mobile.css" />
+	<link type="text/css" media='(min-width: 500px)' rel='stylesheet' href='pay.css' />
+	<meta name="description" content="homepage">
+	<link rel="shortcut icon" href="omowunmi/home/logo.png" type="image/png">
+	<meta charset="UTF-8">
+	<meta name="author" content="Joshua Equere">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Muli|Anton|Josefin+Sans|Quicksand|Comfortaa|Kanit|Varela+Round" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="jquery-2.1.0.min.js"></script>
+	<script src="float-panel.js"></script>
+</head>
+<body>
+
+<div class="desktop">
+
+	<img class="background" src="pictures/background.png" />
+	<div class="background"></div>
+
+	<!--- header-->
+	<div class="header">
+		<a>HOME</a>
+		<a>ABOUT</a>
+		<a>COURSES</a>
+		<a class="active">ADMISSION</a>
+		<a>CONTACT</a>
+
+		<b class="logo">LOGO</b>
+	</div>
+	<script>
+		$(document).ready(function(){
+		  $(window).scroll(function(){
+		  	var scroll = $(window).scrollTop();
+			  if (scroll > 150) {
+			    $(".header").css("background" , "#001f51");
+			  }
+
+			  else{
+				  $(".header").css("background" , "none");  	
+			  }
+		  })
+		})
+	</script>
+
+	<!--- content-->
+	<div class="content">
+
+		<div class="sidenav">
+			<p class="logout">LOGOUT</p>
+			<p>MY PROFILE</p>
+			<p>ADD RECORD</p>
+			<p class="active">PAY FEES</p>
+		</div>
+
+
+		<div class="login">
+			<a class="head">PAY FEE</a><br />
+
+			<p style="color:#333; font-family:'Josefin Sans', sans-serif; font-weight:bold; font-size:1vw">PLEASE SELECT FEE TYPE TO PAY</p>
+
+			<form>
+
+				<div class="space"></div>
+
+				<label><input class="option-input radio" type="radio" name="payment" value="ict"> ICT DEVELOPMENT FEE</label>
+
+				<div class="space"></div>
+
+				<label><input class="option-input radio" type="radio" name="payment" value="cbt"> CBT EXAMINATION FEE</label>
+
+				<br /><br />
+
+				<input class="submit" type="submit" value="CONTINUE" />			
+			</form>
+		</div>
+
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="mobile">
+
+	<!-- background-->
+	<img class="background" src="pictures/background2.png" />
+	<div class="background"></div>
+
+
+	<!-- header-->
+	<div class="header2">
+
+		<!--- menu-->
+		<a class="menu-button" onclick="openMenu()"><i class="fas fa-bars"></i></a>
+		<div id="menu" class="menu">
+			<a href="javascript:void(0)" class="close" onclick="closeMenu()">&times;</a>
+			<a href="#">HOME</a>
+			<a href="#">ABOUT</a>
+			<a href="#">COURSES</a>
+			<a class="active" href="#">ADMISSION</a>
+			<a href="#">CONTACT</a>
+		</div>
+		<script>
+		function openMenu() {
+		    document.getElementById("menu").style.width = "100vw";
+		}
+
+		function closeMenu() {
+		    document.getElementById("menu").style.width = "0";
+		}
+		</script>
+
+
+		<!--- login-->
+		<a class="login-button" onclick="openLogin()"><i class="fas fa-user"></i></a>
+		<div id="login" class="loginNav">
+			<a href="javascript:void(0)" class="close" onclick="closeLogin()">&times;</a>
+			<a href="#">LOGOUT</a>
+			<a href="#">MY PROFILE</a>
+			<a href="#">ADD RECORD</a>
+			<a class="active" href="#">PAY FEES</a>
+		</div>
+		<script>
+		function openLogin() {
+		    document.getElementById("login").style.width = "100vw";
+		}
+
+		function closeLogin() {
+		    document.getElementById("login").style.width = "0";
+		}
+		</script>
+
+	</div>
+	<script>
+		$(document).ready(function(){
+		  $(window).scroll(function(){
+		  	var scroll = $(window).scrollTop();
+			  if (scroll > 30) {
+			    $(".header2").css("background" , "#001f51");
+			  }
+
+			  else{
+				  $(".header2").css("background" , "none");  	
+			  }
+		  })
+		})
+	</script>
+
+
+	<!-- content-->
+	<div class="content">
+
+		<div class="login">
+			<a class="head">PAY FEE</a><br />
+
+			<p style="color:#333; font-family:'Josefin Sans', sans-serif; font-weight:bold; font-size:3vw">PLEASE SELECT FEE TYPE TO PAY</p>
+
+			<form>
+
+				<div class="space"></div>
+
+				<label><input class="option-input radio" type="radio" name="payment" value="ict"> ICT DEVELOPMENT FEE</label>
+
+				<div class="space"></div>
+
+				<label><input class="option-input radio" type="radio" name="payment" value="cbt"> CBT EXAMINATION FEE</label>
+
+				<br /><br />
+
+				<input class="submit" type="submit" value="CONTINUE" />			
+			</form>
+		</div>
+
+	</div>
+
+</div>
+
+
+</body>
