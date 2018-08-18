@@ -1,0 +1,135 @@
+body{margin:0!important; padding:0!important; font-family:'Quicksand', sans-serif; background-image:url("pictures/background.png"); background-size:25vw; background-color:#fff; background-attachment:fixed; color:#333;}
+/* ECEDEF*/
+*{
+	box-sizing: border-box;
+}
+
+.desktop{
+	display:none;
+}
+
+/*** Header*/
+
+/*** (menu)*/
+.sidenav{
+    height:0;
+    width:100%;
+    position:fixed;
+    z-index:20;
+    top:0;
+    right:0;
+    background:#111;
+    overflow-x:hidden;
+    transition:.5s;
+    text-align:center;
+}
+.sidenav a{
+    padding:5% 0;
+    text-decoration:none;
+    font-size:5vw;
+    color:#fff;
+    display:block;
+    transition:.3s;
+}
+.sidenav a:hover{
+    color:#c90a69;
+}
+.sidenav a.active{
+    color:#c90a69;
+}
+.sidenav .close{
+    margin:5vw 0 7vw 0;
+    color:yellow;
+    font-size:5vw;
+}
+
+#serviceContainer, #solarContainer{
+    padding:3vw 0;
+    background:#333;
+    display:none;
+}
+
+
+
+
+.header{
+    text-align:center;
+    position:fixed;
+    left:0;
+    top:0;
+    background:rgba(0,0,0,.4);
+    width:100%;
+    height:10vw;
+}
+.menu{
+    width:100%;
+    text-align:center;
+    z-index:10;
+    position:fixed;
+    right:3vw;
+    top:1vw;
+    font-size:5vw;
+    color:#fff;
+    cursor:pointer;
+    transition:.8s ease;
+}
+.menu:hover span{
+    color:yellow;
+}
+.menu span{
+    transition:.8s ease;
+    position:absolute;
+    left:28%;
+    top:15%;
+}
+/*** END! (menu)*/
+
+
+/*** End of Header*/
+
+
+
+/*** (content)*/
+.content{
+    margin-top:12vw;
+    padding:4vh 4vw;
+    font-family:'Varela Round', sans-serif;
+    background:none;
+    width:100%;
+}
+
+
+.stages{
+    width:100%;
+    padding:3vh 0;
+    text-align:center;
+}
+
+.label{
+    font-weight:bold;
+    font-size:7vw;
+    cursor:pointer;
+}
+
+.stages img{
+    width:35vw;
+    margin-bottom:3vh;
+}
+
+.name{
+    font-size:6vw;
+}
+
+.item{
+    margin:7vh 0;    
+}
+
+.item-container{
+    display:none;
+}
+
+.space{
+    margin:3vh 0;
+    border-bottom:#333 solid 1px;    
+}
+/*** END! (content)*/

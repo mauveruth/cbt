@@ -1,0 +1,244 @@
+body{margin:0!important; padding:0!important; font-family:'Quicksand', sans-serif; background-image:url("pictures/background.png"); background-size:100vw; background-color:#fff; background-attachment:fixed; color:#333;}
+/* ECEDEF*/
+*{
+	box-sizing: border-box;
+}
+
+.desktop{
+	display:none;
+}
+
+/*** Header*/
+
+/*** (menu)*/
+.sidenav{
+    height:0;
+    width:100%;
+    position:fixed;
+    z-index:20;
+    top:0;
+    right:0;
+    background:#111;
+    overflow-x:hidden;
+    transition:.5s;
+    text-align:center;
+}
+.sidenav a{
+    padding:5% 0;
+    text-decoration:none;
+    font-size:5vw;
+    color:#fff;
+    display:block;
+    transition:.3s;
+}
+.sidenav a:hover{
+    color:#c90a69;
+}
+.sidenav a.active{
+    color:#c90a69;
+}
+.sidenav .close{
+    margin:5vw 0 7vw 0;
+    color:yellow;
+    font-size:5vw;
+}
+
+#serviceContainer, #solarContainer{
+    padding:3vw 0;
+    background:#333;
+    display:none;
+}
+
+
+
+
+.header{
+    position:fixed;
+    left:0;
+    top:0;
+    background:rgba(0,0,0,.4);
+    width:100%;
+    height:10vw;
+}
+.menu{
+    z-index:10;
+    position:fixed;
+    right:3vw;
+    top:1vw;
+    font-size:5vw;
+    color:#fff;
+    cursor:pointer;
+    transition:.8s ease;
+}
+.menu:hover span{
+    color:yellow;
+}
+.menu span{
+    transition:.8s ease;
+    position:absolute;
+    left:28%;
+    top:15%;
+}
+/*** END! (menu)*/
+
+
+/*** End of Header*/
+
+
+
+/*** (content)*/
+.content{
+    margin-top:12vw;
+    padding:4vh 4vw;
+    font-family:'Varela Round', sans-serif;
+    background:none;
+    width:100%;
+}
+
+.content .head{
+    margin:0;
+    padding:2vh 0;
+    font-size:7vw;
+    font-weight:bolder;
+    background-color:rgba(211,211,211,.6);
+    text-align:center;
+}
+
+.content .form{
+    padding-top:4vh;
+    margin-top:4vh;
+    width:100%;
+    text-align:center;
+    background-color:rgba(211,211,211,.6);
+}
+
+.content .form .picture{
+    margin:auto;
+    width:160px;
+    height:160px;
+    border-radius:100%;
+    background:#4e678e;
+    text-align:center;
+}
+
+.content .form .picture img{
+    top:5%;
+    width:80%;
+    position:relative;
+}
+
+.content .form form{
+    text-align:center;
+    margin-top:13vh;
+}
+
+.content .form form #space{
+    margin:10vh 0;
+}
+
+.content .form form input,
+.content .form form span,
+.content .form form label{
+    display:block;
+    margin:0vh 2vw;
+    padding:0vh 2vw;
+    border:none;
+    font-size:1vw;
+}
+
+.content .form input:focus{
+    outline:0;
+}
+
+.content .form input.question{
+    font-size:5vw;
+    border-radius:2px;
+    margin:auto;
+    border:none;
+    width:80%;
+    background:none;
+    transition:padding-top 0.5s ease, margin-top 0.5s ease;
+    overflow-x:hidden;
+}
+
+.content .form input.question + label{
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    padding: 0;
+    margin: auto;
+    width: 80%;
+    border-top: 1px solid #333;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    height: 0px;
+}
+
+.content .form input.question:focus + label{
+    border-top:1px solid #afafaf;
+}
+
+.content .form input.question:focus,
+.content .form input.question:valid{
+    padding:3vh;
+}
+
+.content .form input.question:focus + label > span,
+.content .form input.question:valid + label > span{
+    top: -15vw;
+    font-size: 3vw;
+    color: #333;
+}
+
+.content .form input.question:invalid{
+    box-shadow:none;
+}
+
+.content .form input.question + label > span{
+    font-weight: 300;
+    margin: 0;
+    position: absolute;
+    color: #8F8F8F;
+    font-size: 5vw;
+    top: -8vw;
+    left: 0px;
+    z-index: -1;
+    -webkit-transition: top 0.5s ease, font-size 0.5s ease, color 0.5s ease;
+    transition: top 0.5s ease, font-size 0.5s ease, color 0.5s ease;
+}
+
+.content .form form .footer{
+    margin:5vh 0 0 0;
+    height:10vw;
+    width:100%;
+    background:#bcbcbc;
+    padding:3vw 2vw;
+}
+
+.content .form .submit{
+    font-size:5vw;
+    padding:2vh 0;
+    text-align:center;
+    width:80%;
+    margin:10vh auto 3vh auto;
+    font-family:'Varela Round', sans-serif;
+    padding:1vh 1vw;
+    color:#fff;
+    background:#333;
+    right:0;
+}
+
+.content .form .footer .sign-up{
+    font-size:3vw;
+    cursor:pointer;
+    float:left;
+}
+
+.content .form .footer .forgot-password{
+    font-size:3vw;
+    cursor:pointer;
+    float:right;
+}
+
+
+/*** END! (content)*/
