@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Agriculture | Heartland</title>
+	<link type="text/css" media='(max-width: 500px)' rel="stylesheet" href="agro-mobile.css" />
+	<link type="text/css" media='(min-width: 500px)' rel='stylesheet' href='agro.css' />
+	<link type="text/css" media='(min-width: 500px)' rel='stylesheet' href='desktop/navbar.css' />
+	<meta name="description" content="homepage">
+	<link rel="shortcut icon" href="omowunmi/home/logo.png" type="image/png">
+	<meta charset="UTF-8">
+	<meta name="author" content="Joshua Equere">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="https://fonts.googleapis.com/css?family=Arsenal|Cinzel|Julius+Sans+One|Antic+Slab|Josefin+Sans|Quicksand|Poppins" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="float-panel.js"></script>
+</head>
+<body>
+
+<div class="desktop">
+
+<!-- header-->
+<div class="header">
+	<img src="pictures/logo.png" />
+	<p>AGRO<a style="font-weight:bold; color:#008e36;">TRAINING</a></p>
+</div>
+
+
+<div id="menuOuter">
+	<div class="menu">
+		<a href="#" style="">HOME</a>
+		<a id="space"></a>
+
+		<div class="service" style="">
+			<a class="service-button">SERVICES &nbsp;<i class="fas fa-angle-down"></i></a>
+			<div class="service-content">
+				<a href="#">AGRO TRAINING</a>
+				<a href="#">CONTRIBUTORY<br />SAVINGS</a>
+				<a href="#">REAL ESTATE</a>
+				<a href="#">EDUCATION SUPPORT<br />SERVICES</a>
+			</div>
+		</div>
+		<a id="space"></a>
+
+		<div class="solar" style="">
+			<a class="solar-button">SOLAR &nbsp;<i class="fas fa-angle-down"></i></a>
+			<div class="solar-content">
+				<a href="#">SOLARPRENUER</a>
+				<a href="#">REGISTER</a>
+				<a href="#">LOGIN</a>
+				<a href="#">SALES</a>
+			</div>
+		</div>
+		<a id="space"></a>
+
+		<a href="#" style="">CONTACT</a>
+		<a id="space"></a>
+		
+		<a href="#" style="">FAQ</a>
+	</div>
+</div>
+<!-- End of Menu -->
+<!-- end of header -->
+
+
+
+<!-- Content -->
+<div class="content">
+
+	<!-- Mission & Vision -->
+	<div class="m-and-v">
+		<div class="mission">
+	    	<p class="head">MISSION</p>
+	    	<p class="body">To create entrepreneurs in solar and CCTV sales, installation, repairs and to engage in collective cooperative investment in the provision of solar energy to the populace.</p>
+    	</div>
+
+    	<div class="space">&nbsp;</div>
+
+		<div class="vision">
+	    	<p class="head">VISION</p>
+	    	<p class="body">To make renewable energy available to the Nigerian population and Africa.</p>
+		</div>
+	</div>
+
+
+	<!-- First Image-->
+    <div id="imageOne" class="imageone hideimageone"><img src="pictures/solarpreneur/home/one.jpg" /></div>
+
+	<script>
+	imageOne = document.getElementById("imageOne");
+
+	var myScrollFunc = function () {
+		var y = window.scrollY;
+		if (y >= 130) {
+			imageOne.className = "imageone showimageone"
+		} else {
+			imageOne.className = "imageone hideimageone"
+		}
+	};
+
+	window.addEventListener("scroll", myScrollFunc);
+    </script>
+    <!-- End of First Image-->
+
+
+    <!-- Second Image-->
+    <div id="imageTwo" class="imagetwo hideimagetwo"><img src="pictures/solarpreneur/home/two.jpg" /></div>
+
+    <script>
+	imageTwo = document.getElementById("imageTwo");
+
+	var myScrollFunc = function () {
+		var y = window.scrollY;
+		if (y >= 100) {
+			imageTwo.className = "imagetwo showimagetwo"
+		} else {
+			imageTwo.className = "imagetwo hideimagetwo"
+		}
+	};
+
+	window.addEventListener("scroll", myScrollFunc);
+    </script>
+    <!-- End of Second Image-->
+
+
+    <!-- Third Image-->
+    <div id="imageThree" class="imagethree hideimagethree"><img src="pictures/solarpreneur/home/three.jpg" /></div>
+
+    <script>
+	imageThree = document.getElementById("imageThree");
+
+	var myScrollFunc = function () {
+		var y = window.scrollY;
+		if (y >= 100) {
+			imageThree.className = "imagethree showimagethree"
+		} else {
+			imageThree.className = "imagethree hideimagethree"
+		}
+	};
+
+	window.addEventListener("scroll", myScrollFunc);
+    </script>
+    <!-- End of Third Image-->
+
+
+   
+
+	<div class="highlights">
+		<p class="head">HIGHLIGHTS</p>
+
+		<div class="training">
+			<img src="pictures/solarpreneur/highlights/training.png" />
+
+			<p>Free training on solar panel installation and services.</p>
+		</div>
+
+		<div class="connect">
+			<img src="pictures/solarpreneur/highlights/connect.png" />
+
+			<p>Become a solar products distributor at no extra cost.</p>
+		</div>
+
+		<div class="learn">
+			<img src="pictures/solarpreneur/highlights/learn.png" />
+
+			<p>Learn installation and repair of inverters.</p>
+		</div>
+
+
+
+
+
+		<div class="kit">
+			<img src="pictures/solarpreneur/highlights/kit.png" />
+
+			<p>Get your complete home solar kits free.</p>
+		</div>
+
+		<div class="community">
+			<img src="pictures/solarpreneur/highlights/community.png" />
+
+			<p>Attract a solar project in your community for free.</p>
+		</div>
+
+		<div class="loan">
+			<img src="pictures/solarpreneur/highlights/loan.png" />
+
+			<p>Get a guaranteed short term cooperative loan for your business without collateral.</p>
+		</div>
+	</div>
+
+
+
+
+    <div class="participate">
+    	<p class="head">HOW TO PARTICIPATE</p>
+
+
+    	<div class="one">
+    		<a class="head">STEP ONE</a>
+
+    		<p>
+    			Register as a member/distributor with #5000. Payment should be made by transfer or direct to the account of Heartland Multipurpose Cooperative Society Ltd, Zenith Bank Plc, Account Number: 1012250553.
+    		</p>
+
+    	</div>
+    	
+    	<div class="two">
+    		<a class="head">STEP TWO</a>
+
+    		<p>
+    			Send your payment details to: heartlandinvestment@gmail.com OR via text message or whatsapp to 08033058892. You will receive a token (epin) sent to your phone. 
+    		</p>
+
+    	</div>
+
+    	<div class="three">
+    		<a class="head">STEP THREE</a>
+
+    		<p>
+    			Go to www.heartlandcooperative.com and click register. Then use the Registration epin and fill the form online. 
+    		</p>
+    		<br />
+
+    	</div>
+    </div>
+
+</div>
+<!-- End of Content -->
+
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var menu = document.getElementById("menuOuter");
+var sticky = menu.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    menu.classList.add("sticky")
+  } else {
+    menu.classList.remove("sticky");
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="mobile">
+
+	<!-- header-->
+
+	<div class="header">
+		<img src="pictures/logo.png" />
+		<p>AGRO<a style="font-weight:bold; color:#008e36;">TRAINING</a></p>
+	</div>
+
+	<!-- menu -->
+	<div id="sideNav" class="sidenav">
+		<a href="javascript:void(0)" class="close" onclick="closeNav()">CLOSE &nbsp;&times;</a>
+		<a href="#">HOME</a>
+		<a href="#" id="serviceBtn">SERVICES &nbsp;<i class="fas fa-angle-down"></i></a>
+			<div id="serviceContainer">
+				<a href="#">AGRO TRAINING</a>
+				<a href="#">CONTRIBUTORY<br />SAVINGS</a>
+				<a href="#">REAL ESTATE</a>
+				<a href="#">EDUCATION SUPPORT<br />SERVICES</a>
+			</div>
+
+		<a href="#" id="solarBtn">SOLAR &nbsp;<i class="fas fa-angle-down"></i></a>
+			<div id="solarContainer">
+				<a href="#">SOLARPRENUER</a>
+				<a href="#">REGISTER</a>
+				<a href="#">LOGIN</a>
+				<a href="#">SALES</a>
+			</div>
+		<a href="#">CONTACT</a>
+		<a href="#">FAQ</a>
+	</div>
+
+	
+
+	<div id="header2" class="header2">
+		<span class="menu" onclick="openNav()"><i class="fas fa-bars"></i></span>
+
+		<script>
+			function openNav() {
+				document.getElementById("sideNav").style.height = "100%";
+			}
+
+			function closeNav() {
+				document.getElementById("sideNav").style.height = "0";
+			}
+		</script>
+	</div>
+
+
+	<script> 
+	$(document).ready(function(){
+	    $("#serviceBtn").click(function(){
+	        $("#serviceContainer").slideToggle("slow");
+	    });
+	});
+
+	$(document).ready(function(){
+	    $("#solarBtn").click(function(){
+	        $("#solarContainer").slideToggle("slow");
+	    });
+	});
+	</script>
+	<!-- End of menu -->
+
+<!-- Content -->
+<div class="content">
+
+	<div class="m-and-v">
+		<div class="mission">
+	    	<p class="head">MISSION</p>
+	    	<p class="body">To create entrepreneurs in solar and CCTV sales, installation, repairs and to engage in collective cooperative investment in the provision of solar energy to the populace.</p>
+	    </div>
+
+	    <div class="space"></div>
+
+	    <div class="vision">
+	    	<p class="head">VISION</p>
+	    	<p class="body">To make renewable energy available to the Nigerian population and Africa.</p>
+	    </div>
+    </div>
+
+
+    <div id="image">
+    	<div>
+    		<img src="pictures/solarpreneur/home/one.jpg" />
+    	</div>
+
+    	<div>
+    		<img src="pictures/solarpreneur/home/two.jpg" />
+    	</div>
+
+    	<div>
+    		<img src="pictures/solarpreneur/home/three.jpg" />
+    	</div>
+    </div>
+    <script>
+    	$("#image > div:gt(0)").hide();
+
+		setInterval(function() {
+		  $('#image > div:first')
+		    .fadeOut(1000)
+		    .next()
+		    .fadeIn(1000)
+		    .end()
+		    .appendTo('#image');
+		}, 3000);
+    </script>
+
+
+
+    <div class="highlights">
+    	<p class="head">HIGHLIGHTS</p>
+
+    	<div class="training">
+    		<img src="pictures/solarpreneur/highlights/training.png" />
+
+    		<p>Free training on solar panel installation and services.</p>
+    	</div>
+
+    	<div class="space"></div>
+
+    	<div class="connect">
+    		<img src="pictures/solarpreneur/highlights/connect.png" />
+
+    		<p>Become a solar products distributor at no extra cost.</p>
+    	</div>
+
+    	<div class="space"></div>
+
+    	<div class="learn">
+    		<img src="pictures/solarpreneur/highlights/learn.png" />
+
+    		<p>Learn installation and repair of inverters.</p>
+    	</div>
+
+    	<div class="space"></div>
+
+    	<div class="kit">
+    		<img src="pictures/solarpreneur/highlights/kit.png" />
+
+    		<p>Get your complete home solar kits free.</p>
+    	</div>
+
+    	<div class="space"></div>
+
+    	<div class="community">
+    		<img src="pictures/solarpreneur/highlights/community.png" />
+
+    		<p>Attract a solar project in your community for free.</p>
+    	</div>
+
+    	<div class="space"></div>
+
+    	<div class="loan">
+    		<img src="pictures/solarpreneur/highlights/loan.png" />
+
+    		<p>Get a guaranteed short term cooperative loan for your business without collateral.</p>
+    	</div>
+    </div>
+
+
+
+    <div class="participate">
+
+    	<p class="head" style="font-size:7vw; padding:none; color:#fff">HOW TO PARTICIPATE</p>
+
+    	<div class="one">
+    		<a class="head">STEP ONE</a>
+
+    		<p>Register as a member/distributor with #5000. Payment should be made by transfer or direct to the account of Heartland Multipurpose Cooperative Society Ltd, Zenith Bank Plc, Account Number: 1012250553.</p>
+    	</div>
+
+    	<div class="space"></div>
+
+    	<div class="two">
+    		<a class="head">STEP TWO</a>
+
+    		<p>Send your payment details to: heartlandinvestment@gmail.com OR via text message or whatsapp to 08033058892. You will receive a token (epin) sent to your phone.</p>
+    	</div>
+
+    	<div class="space"></div>
+
+    	<div class="three">
+    		<a class="head">STEP THREE</a>
+
+    		<p>Go to www.heartlandcooperative.com and click register. Then use the Registration epin and fill the form online.</p>
+    	</div>
+
+    </div>
+</div>
+<!-- End of Content-->
+
+
+<div id="footer" class="footer hide">
+
+	<p class="subscribe">SUBSCRIBE TO OUR LETTER HEAD</p>
+
+	<p class="social-media">
+		<i class="fab fa-facebook-f"></i>
+		&nbsp; &nbsp;
+		<i class="fab fa-twitter"></i>
+		&nbsp; &nbsp;
+		<i class="fab fa-instagram"></i>
+	</p>
+
+	<p class="copyright">Copyright 2018 | Heartland Ltd.</p>
+
+</div>
+<script>
+	footer = document.getElementById("footer");
+
+	var myScrollFunc = function () {
+	    var y = window.scrollY;
+	    if (y >= 3100) {
+	        footer.className = "footer show"
+	    } else {
+	        footer.className = "footer hide"
+	    }
+	};
+
+	window.addEventListener("scroll", myScrollFunc);
+</script>
+
+
+
+</div>
+
+</body>

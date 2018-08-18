@@ -1,0 +1,221 @@
+body{margin:0!important; padding:0!important; font-family:'Quicksand', sans-serif; background-image:url("pictures/background.png"); background-size:15vw; background-color:#fff; background-attachment:fixed; color:#333;}
+/* ECEDEF*/
+*{
+	box-sizing: border-box;
+}
+
+.desktop{
+	display:none;
+}
+
+
+::-webkit-scrollbar{
+    width:0vw;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #333; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar:hover {
+    width:1vw;
+}
+
+
+/*** Header*/
+#typedText{
+    z-index:-10;
+    text-align:center;
+    width:100vw;
+    height:100vh;
+    color:#333;
+    font-family:'Archivo Black', sans-serif;
+    position:fixed;
+    top:0;
+    left:0;
+    font-size:7vw;
+    letter-spacing:1vw;
+    font-weight:bolder;
+    padding-top:15vh;
+}
+
+.arrow{
+    z-index:-10;
+    position:fixed;
+    left:42%;
+    font-size:20vw;
+    animation:arrow 2s linear infinite;
+    -webkit-animation:arrow 2s linear infinite;
+}
+
+@keyframes arrow{
+    0%{
+        bottom:15vh;
+        opacity:1;
+        transform:rotateY(0);
+    }
+    15%{
+        bottom:15vh;
+        opacity:1;
+        transform:rotateY(0);        
+    }
+    50%{
+        bottom:3vh;
+        transform:rotateY(360deg);
+        opacity:.6;
+    }
+    100%{
+        bottom:15vh;
+        opacity:1;
+        transform:rotateY(0);
+    }
+}
+
+
+/*** (menu)*/
+.sidenav{
+    height:0;
+    width:100%;
+    position:fixed;
+    z-index:20;
+    top:0;
+    right:0;
+    background:#111;
+    overflow-x:hidden;
+    transition:.5s;
+    text-align:center;
+}
+.sidenav a{
+    font-family:'Quicksand', sans-serif;
+    padding:5% 0;
+    text-decoration:none;
+    font-size:5vw;
+    color:#fff;
+    display:block;
+    transition:.3s;
+}
+.sidenav a:hover{
+    color:#c90a69;
+}
+.sidenav a.active{
+    color:#c90a69;
+}
+.sidenav .close{
+    margin:5vh 0;
+    color:yellow;
+    font-size:5vw;
+}
+
+#serviceContainer, #solarContainer{
+    padding:3vw 0;
+    background:#333;
+    display:none;
+}
+
+
+
+
+
+.menu{
+    position:fixed;
+    top:3vh;
+    right:3vw;
+    font-family:'Quicksand', sans-serif;
+    z-index:10;
+    font-size:4vw;
+    color:#fff;
+    cursor:pointer;
+    transition:.8s ease;
+    padding:15px;
+    background:rgba(0,0,0,.5);
+    border-radius:100%;
+}
+/*** END! (menu)*/
+
+
+/*** End of Header*/
+
+
+
+/*** (content)*/
+.content{
+    margin-bottom:40vh;
+    width:100%;
+    margin-top:100vh;
+    color:#fff;
+}
+.content .section{
+    text-align:center;
+    padding:15vh 4vw;
+}
+.content .section img{
+    width:30vw;
+}
+.content .section .a{
+    font-size:8vw;
+    font-weight:bolder;
+}
+.content .section .b{
+    font-size:4vw;
+    margin-bottom:10vh;
+}
+.content .section span{
+    font-size:4vw;
+    font-weight:bold;
+    background:#fff;
+    color:#0b7ea9;
+    padding:1vh 4vw;
+    border-radius:50px;
+}
+
+
+
+.content .solar{
+    background:#0B7EA9;
+}
+.content .education{
+    background:#A8518A;
+}
+.content .savings{
+    background:#ED3237;
+}
+.content .realEstate{
+    background:#F58634;
+}
+.content .agro{
+    background:#007c1b;
+}
+
+/*** END! (content)*/
+
+
+/*** footer*/
+.footer{
+    height:40vh;
+    z-index:-10;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background:#333;
+    padding:5vh 0;
+    color:#fff;
+    text-align:center;
+}
+.footer .social-media{
+    font-size:6vw;
+}
+.footer .copyright{
+    color:#e0e0e0;
+    font-size:3vw;
+}
+.footer .subscribe{
+    font-size:4vw;
+}
+
+.hide{
+    opacity:0;
+}
+.show{
+    opacity:1;
+}
