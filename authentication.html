@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Authentication | Solarpreneur</title>
+	<link type="text/css" media='(max-width: 500px)' rel="stylesheet" href="css/authentication-mobile.css" />
+	<link type="text/css" media='(min-width: 500px)' rel='stylesheet' href='css/authentication.css' />
+	<link type="text/css" media='(min-width: 500px)' rel='stylesheet' href='desktop/navbar.css' />
+	<meta name="description" content="homepage">
+	<link rel="shortcut icon" href="omowunmi/home/logo.png" type="image/png">
+	<meta charset="UTF-8">
+	<meta name="author" content="Joshua Equere">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Muli|Anton|Josefin+Sans|Quicksand|Comfortaa|Kanit|Varela+Round" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="float-panel.js"></script>
+</head>
+<body>
+
+<div class="desktop">
+
+<!-- header-->
+<div class="menu-outer">
+	<div class="menu">
+		<a href="home.html" style="">HOME</a>
+		<a id="space"></a>
+
+		<div class="service" style="">
+			<a class="service-button">SERVICES &nbsp;<i class="fas fa-angle-down"></i></a>
+			<div class="service-content">
+				<a href="agro.html">AGRO TRAINING</a>
+				<a href="savings.html">CONTRIBUTORY<br />SAVINGS</a>
+				<a href="real-estate.html">REAL ESTATE</a>
+				<a href="education.html">EDUCATION SUPPORT<br />SERVICES</a>
+			</div>
+		</div>
+		<a id="space"></a>
+
+		<div class="solar" style="">
+			<a class="solar-button">SOLAR &nbsp;<i class="fas fa-angle-down"></i></a>
+			<div class="solar-content">
+				<a href="soarpreneur.html">SOLARPRENUER</a>
+				<a href="signup.html">REGISTER</a>
+				<a href="login.html">LOGIN</a>
+				<a href="#">SALES</a>
+			</div>
+		</div>
+		<a id="space"></a>
+
+		<a href="#" style="">CONTACT</a>
+		<a id="space"></a>
+		
+		<a href="#" style="">FAQ</a>
+	</div>
+</div>
+<!-- End of Menu -->
+<!-- end of header -->
+
+
+
+<!-- Content -->
+<div class="content">
+	<div class="left">
+	</div>
+
+	<div class="right">
+		<p class="head">REGISTRATION AUTHENTICATION</p>
+
+		<div class="form">
+			<div class="picture"><img src="pictures/solar/form/login.png" /></div>
+
+			<form>
+				<input type="text" name="username" class="question" id="username" required autocomplete="off" />
+				<label for="username"><span>AUTHENTICATION PIN</span></label>
+
+				<input type="submit" value="SUBMIT" class="submit" />
+			</form>
+		</div>
+	</div>
+</div>
+<!-- End of Content -->
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="mobile">
+
+
+	<!-- menu -->
+	<div id="sideNav" class="sidenav">
+		<a href="javascript:void(0)" class="close" onclick="closeNav()">CLOSE &nbsp;&times;</a>
+		<a href="#">HOME</a>
+		<a href="#" id="serviceBtn">SERVICES &nbsp;<i class="fas fa-angle-down"></i></a>
+			<div id="serviceContainer">
+				<a href="#">AGRO TRAINING</a>
+				<a href="#">CONTRIBUTORY<br />SAVINGS</a>
+				<a href="#">REAL ESTATE</a>
+				<a href="#">EDUCATION SUPPORT<br />SERVICES</a>
+			</div>
+
+		<a href="#" id="solarBtn">SOLAR &nbsp;<i class="fas fa-angle-down"></i></a>
+			<div id="solarContainer">
+				<a href="#">SOLARPRENUER</a>
+				<a href="#">REGISTER</a>
+				<a href="#">LOGIN</a>
+				<a href="#">SALES</a>
+			</div>
+		<a href="#">CONTACT</a>
+		<a href="#">FAQ</a>
+	</div>
+
+	<div onclick="openNav()" class="menu">MENU</div>
+
+	<script>
+		function openNav() {
+			document.getElementById("sideNav").style.height = "100%";
+		}
+
+		function closeNav() {
+			document.getElementById("sideNav").style.height = "0";
+		}
+	</script>
+
+	<div class="header"></div>
+
+
+	<script> 
+	$(document).ready(function(){
+	    $("#serviceBtn").click(function(){
+	        $("#serviceContainer").slideToggle("slow");
+	    });
+	});
+
+	$(document).ready(function(){
+	    $("#solarBtn").click(function(){
+	        $("#solarContainer").slideToggle("slow");
+	    });
+	});
+	</script>
+	<!-- End of menu -->
+
+<!-- Content -->
+<div class="content">
+	<p class="head">REGISTRATION AUTHENTICATION</p>
+
+	<div class="form">
+		<div class="picture"><img src="pictures/solar/form/login.png" /></div>
+
+		<form>
+			<input type="text" name="username" class="question" id="username" required autocomplete="off" />
+			<label for="username"><span>AUTHENTICATION PIN</span></label>
+
+			<input type="submit" value="SUBMIT" class="submit" />
+		</form>
+	</div>
+</div>
+<!-- End of Content-->
+
+
+</div>
+
+
+
+
+</body>

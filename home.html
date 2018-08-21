@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Home | Heartland</title>
+	<link type="text/css" media='(max-width: 500px)' rel="stylesheet" href="css/home-mobile.css" />
+	<link type="text/css" media='(min-width: 500px)' rel='stylesheet' href='css/home.css' />
+	<link type="text/css" media='(min-width: 500px)' rel='stylesheet' href='desktop/navbar.css' />
+	<meta name="description" content="homepage">
+	<link rel="shortcut icon" href="omowunmi/home/logo.png" type="image/png">
+	<meta charset="UTF-8">
+	<meta name="author" content="Joshua Equere">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Josefin+Sans|Quicksand" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="float-panel.js"></script>
+</head>
+<body>
+
+<div class="desktop">
+
+<!-- header-->
+
+<div id="menu-outer">
+
+	<div class="carousel">
+		<p class="marquee">
+			<span>This text</span>
+		</p>
+
+
+		<p class="marquee marquee2">
+			<span>This text</span>
+		</p>
+
+
+		<p class="marquee marquee3">
+			<span>This text</span>
+		</p>
+
+
+		<p class="marquee marquee4">
+			<span>This text</span>
+		</p>
+
+	</div>
+
+
+
+
+	<div class="menu">
+		<a href="home.html" style="">HOME</a>
+		<a id="space"></a>
+
+		<div class="service" style="">
+			<a class="service-button">SERVICES &nbsp;<i class="fas fa-angle-down"></i></a>
+			<div class="service-content">
+				<a href="agro.html">AGRO TRAINING</a>
+				<a href="savings.html">CONTRIBUTORY<br />SAVINGS</a>
+				<a href="real-estate.html">REAL ESTATE</a>
+				<a href="education.html">EDUCATION SUPPORT<br />SERVICES</a>
+			</div>
+		</div>
+		<a id="space"></a>
+
+		<div class="solar" style="">
+			<a class="solar-button">SOLAR &nbsp;<i class="fas fa-angle-down"></i></a>
+			<div class="solar-content">
+				<a href="soarpreneur.html">SOLARPRENUER</a>
+				<a href="signup.html">REGISTER</a>
+				<a href="login.html">LOGIN</a>
+				<a href="#">SALES</a>
+			</div>
+		</div>
+		<a id="space"></a>
+
+		<a href="#" style="">CONTACT</a>
+		<a id="space"></a>
+		
+		<a href="#" style="">FAQ</a>
+	</div>
+
+</div>
+<!-- End of Menu -->
+<!-- end of header -->
+
+
+
+<!-- Content -->
+<div class="content">
+	<div class="row">
+
+		<div onload="typeWriter();" class="col intro">
+			WELCOME
+			<br /><br />
+			TO HEARTLAND MULTIPURPOSE COOPERATIVE SOCIETY LTD.
+		</div>
+
+		<script>
+		var i = 0;
+		var txt = 'Lorem ipsum dummy text blabla.';
+		var speed = 50;
+
+		function typeWriter() {
+		  if (i < txt.length) {
+		    document.getElementById("intro").innerHTML += txt.charAt(i);
+		    i++;
+		    setTimeout(typeWriter, speed);
+		  }
+		}
+		</script>
+
+		<div class="col solar">
+			<img class="icon1" src="pictures/home/solar.png" />
+			<span class="a1">SOLARPRENEUR<br />PROGRAM</span><br />
+			<p class="b1">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean placerat varius dolor ac rhoncus. Integer varius viverra eros non placerat. Nunc gravida mauris sagittis tempus gravida. Mauris in dignissim eros. Morbi fermentum efficitur eros, a consectetur ex luctus sit amet.</p>
+			<span class="button1" style="color:#007c1b">LEARN MORE</span>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col education">
+			<img class="icon2" src="pictures/home/education.png" />
+			<span class="a2">EDUCATION<br />SUPPORT SERVICES</span><br />
+			<p class="b2">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean placerat varius dolor ac rhoncus. Integer varius viverra eros non placerat. Nunc gravida mauris sagittis tempus gravida. Mauris in dignissim eros. Morbi fermentum efficitur eros, a consectetur ex luctus sit amet.</p>
+			<span class="button1" style="color:#0B7EA9">LEARN MORE</span>
+		</div>
+
+		<div class="col savings">
+			<img class="icon1" src="pictures/home/savings.png" />
+			<span class="a1">CONTRIBUTORY<br />SAVINGS</span><br />
+			<p class="b1">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean placerat varius dolor ac rhoncus. Integer varius viverra eros non placerat. Nunc gravida mauris sagittis tempus gravida. Mauris in dignissim eros. Morbi fermentum efficitur eros, a consectetur ex luctus sit amet.</p>
+			<span class="button1" style="color:#ED3237">LEARN MORE</span>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col realEstate">
+			<img class="icon2" src="pictures/home/house.png" />
+			<span class="a2">REAL<br />ESTATE</span><br />
+			<p class="b2">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean placerat varius dolor ac rhoncus. Integer varius viverra eros non placerat. Nunc gravida mauris sagittis tempus gravida. Mauris in dignissim eros. Morbi fermentum efficitur eros, a consectetur ex luctus sit amet.</p>
+			<span class="button1" style="color:#F58634">LEARN MORE</span>
+		</div>
+
+		<div class="col agro">
+			<img class="icon1" src="pictures/home/agro.png" />
+			<span class="a1">AGRO<br />TRAINING</span><br />
+			<p class="b1">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean placerat varius dolor ac rhoncus. Integer varius viverra eros non placerat. Nunc gravida mauris sagittis tempus gravida. Mauris in dignissim eros. Morbi fermentum efficitur eros, a consectetur ex luctus sit amet.</p>
+			<span class="button1" style="color:#007c1b">LEARN MORE</span>
+		</div>
+	</div>
+</div>
+<!-- End of Content -->
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="mobile">
+
+	<!-- header-->
+
+	<div class="header">
+		<div id="typedText"></div>
+
+		<script>
+			// set up text to print, each item in array is new line
+			var aText = new Array(
+			"WELCOME", 
+			" ",
+			"TO HEARTLAND MULTIPURPOSE CORPORATIVE SOCIETY LTD."
+			);
+			var iSpeed = 100; // time delay of print out
+			var iIndex = 0; // start printing array at this posision
+			var iArrLength = aText[0].length; // the length of the text array
+			var iScrollAt = 20; // start scrolling up at this many lines
+			 
+			var iTextPos = 0; // initialise text position
+			var sContents = ''; // initialise contents variable
+			var iRow; // initialise current row
+			 
+			function typewriter()
+			{
+			 sContents =  ' ';
+			 iRow = Math.max(0, iIndex-iScrollAt);
+			 var destination = document.getElementById("typedText");
+			 
+			 while ( iRow < iIndex ) {
+			  sContents += aText[iRow++] + '<br />';
+			 }
+			 destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "|";
+			 if ( iTextPos++ == iArrLength ) {
+			  iTextPos = 0;
+			  iIndex++;
+			  if ( iIndex != aText.length ) {
+			   iArrLength = aText[iIndex].length;
+			   setTimeout("typewriter()", 500);
+			  }
+			 } else {
+			  setTimeout("typewriter()", iSpeed);
+			 }
+			}
+
+
+			typewriter();
+		</script>
+
+		<i class="arrow fas fa-angle-down"></i>
+	</div>
+
+	<!-- menu -->
+	<div id="sideNav" class="sidenav">	
+
+		<a href="javascript:void(0)" class="close" onclick="closeNav()">CLOSE &times;</a>
+		<a href="home.html">HOME</a>
+		<a href="#" id="serviceBtn">SERVICES &nbsp;<i class="fas fa-angle-down"></i></a>
+			<div id="serviceContainer">
+				<a href="agro.html">AGRO TRAINING</a>
+				<a href="savings.html">CONTRIBUTORY<br />SAVINGS</a>
+				<a href="real-estate.html">REAL ESTATE</a>
+				<a href="education.html">EDUCATION SUPPORT<br />SERVICES</a>
+			</div>
+
+		<a href="#" id="solarBtn">SOLAR &nbsp;<i class="fas fa-angle-down"></i></a>
+			<div id="solarContainer">
+				<a href="solarpreneur.html">SOLARPRENUER</a>
+				<a href="signup.html">REGISTER</a>
+				<a href="login.html">LOGIN</a>
+				<a href="#">SALES</a>
+			</div>
+		<a href="#">CONTACT</a>
+		<a href="#">FAQ</a>
+
+	</div>
+
+	
+
+	<span class="menu" onclick="openNav()"><i class="fas fa-bars"></i></span>
+
+	<script>
+		function openNav() {
+			document.getElementById("sideNav").style.height = "100%";
+		}
+
+		function closeNav() {
+			document.getElementById("sideNav").style.height = "0";
+		}
+	</script>
+
+
+	<script> 
+	$(document).ready(function(){
+	    $("#serviceBtn").click(function(){
+	        $("#serviceContainer").slideToggle("slow");
+	    });
+	});
+
+	$(document).ready(function(){
+	    $("#solarBtn").click(function(){
+	        $("#solarContainer").slideToggle("slow");
+	    });
+	});
+	</script>
+	<!-- End of menu -->
+
+<!-- Content -->
+<div class="content">
+
+	<div class="section solar">
+		<img src="pictures/home/solar.png" />
+		<p class="a">SOLARPRENEUR PROGRAM</p>
+		<p class="b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat varius dolor ac rhoncus. Integer varius viverra eros non placerat. Nunc gravida mauris sagittis tempus gravida. Mauris in dignissim eros. Morbi fermentum efficitur eros, a consectetur ex luctus sit amet.</p>
+		<span class="button" style="color:#0B7EA9">LEARN MORE</span>
+	</div>
+
+	<div class="section education">
+		<img src="pictures/home/education.png" />
+		<p class="a">EDUCATIONAL SUPPORT SERVICES</p>
+		<p class="b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat varius dolor ac rhoncus. Integer varius viverra eros non placerat. Nunc gravida mauris sagittis tempus gravida. Mauris in dignissim eros. Morbi fermentum efficitur eros, a consectetur ex luctus sit amet.</p>
+		<span class="button" style="color:#A8518A">LEARN MORE</span>
+	</div>
+
+	<div class="section savings">
+		<img src="pictures/home/savings.png" />
+		<p class="a">CONTRIBUTORY SAVINGS</p>
+		<p class="b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat varius dolor ac rhoncus. Integer varius viverra eros non placerat. Nunc gravida mauris sagittis tempus gravida. Mauris in dignissim eros. Morbi fermentum efficitur eros, a consectetur ex luctus sit amet.</p>
+		<span class="button" style="color:#ED3237">LEARN MORE</span>
+	</div>
+
+	<div class="section realEstate">
+		<img src="pictures/home/house.png" />
+		<p class="a">REAL ESTATE</p>
+		<p class="b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat varius dolor ac rhoncus. Integer varius viverra eros non placerat. Nunc gravida mauris sagittis tempus gravida. Mauris in dignissim eros. Morbi fermentum efficitur eros, a consectetur ex luctus sit amet.</p>
+		<span class="button" style="color:#F58634">LEARN MORE</span>
+	</div>
+
+	<div class="section agro">
+		<img src="pictures/home/agro.png" />
+		<p class="a">AGRO TRAINING</p>
+		<p class="b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat varius dolor ac rhoncus. Integer varius viverra eros non placerat. Nunc gravida mauris sagittis tempus gravida. Mauris in dignissim eros. Morbi fermentum efficitur eros, a consectetur ex luctus sit amet.</p>
+		<span class="button" style="color:#007c1b">LEARN MORE</span>
+	</div>
+
+</div>
+<!-- End of Content-->
+
+<div id="footer" class="footer hide">
+
+	<p class="subscribe">SUBSCRIBE TO OUR LETTER HEAD</p>
+
+	<p class="social-media">
+		<i class="fab fa-facebook-f"></i>
+		&nbsp; &nbsp;
+		<i class="fab fa-twitter"></i>
+		&nbsp; &nbsp;
+		<i class="fab fa-instagram"></i>
+	</p>
+
+	<p class="copyright">Copyright 2018 | Heartland Ltd.</p>
+
+</div>
+<script>
+	footer = document.getElementById("footer");
+
+	var myScrollFunc = function () {
+	    var y = window.scrollY;
+	    if (y >= 800) {
+	        footer.className = "footer show"
+	    } else {
+	        footer.className = "footer hide"
+	    }
+	};
+
+	window.addEventListener("scroll", myScrollFunc);
+</script>
+
+
+
+</div>
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("header2");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>

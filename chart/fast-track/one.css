@@ -1,0 +1,344 @@
+body{margin:0!important; padding:0!important; font-family:'Quicksand', sans-serif; background-image:url("pictures/background.png"); background-size:20vw; background-color:#fff; background-attachment:fixed; color:#333;}
+/* ECEDEF*/
+*{
+	box-sizing: border-box;
+}
+
+.mobile{
+	display:none;
+}
+
+
+::-webkit-scrollbar{
+    width:.7vw;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #333; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar:hover {
+    width:1vw;
+}
+
+
+
+/*** Header*/
+
+/*** Menu*/
+.menu-outer{
+    z-index:10000;
+    position:fixed;
+    top:0;
+    left:0;
+    border-bottom:1px #e0e0e0 solid;
+    width:100%;
+    background:rgba(250,250,250,.6);
+}
+.menu{
+    height:10vh;
+    overflow:hidden;
+    background:none;
+    font-weight:bold;
+    width:48vw;
+    margin:auto;
+}
+.menu #space{
+    cursor:none;
+}
+
+.menu a{
+    font-size:1.5vw;
+    padding:4vh 1vw;
+    float:left;
+    display:inline-block;
+    text-align:center;
+    text-decoration:none;
+    color:#333;
+}
+.service, .solar{
+    cursor:pointer;
+    float:left;
+    overflow:hidden;
+}
+
+.service-button, .solar-button{
+    cursor:pointer;
+}
+
+.service-content, .solar-content{
+    background:#fff;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,.2);
+    border-top:4px #565656 solid;
+    margin-top:10vh;
+    display:none;
+    position:absolute;
+    min-width:10vw;
+    z-index:10000;
+}
+.service-content a, .solar-content a{
+    padding:2vh 2vw;
+    float:none;
+    text-decoration:none;
+    display:block;
+    text-align:left;
+}
+.service:hover .service-content, .solar:hover .solar-content{
+    display:block;
+}
+
+/*** End of Menu*/
+
+/*** End of Header*/
+
+
+.item .tooltip{
+    visibility:hidden;
+    width:120px;
+    background:#555;
+    color:#fff;
+    text-align:center;
+    text-transform:uppercase;
+    border-radius:6px;
+    padding:1vh 0;
+    position:absolute;
+    z-index:10;
+    bottom:120%;
+    left:50%;
+    margin-left:-60px;
+    opacity:0;
+    transition:opacity .3s;
+}
+.item .tooltip::after{
+    content:"";
+    position:absolute;
+    top:100%;
+    left:50%;
+    margin-left:-5px;
+    border-width:5px;
+    border-style:solid;
+    border-color:#555 transparent transparent transparent;
+}
+.item:hover .tooltip{
+    visibility:visible;
+    opacity:1;
+}
+
+
+
+
+#svgContainer { 
+    z-index:-10;
+	position:absolute;
+	opacity: 0.5;
+}
+
+#outer{
+    text-align:center;
+	position:absolute;
+	top:-15vh;
+	left:0;
+	z-index: -10;
+	width: 100%;
+}
+
+.header{
+    width:100%;
+    position:relative;
+    font-family:'Josefin Sans', sans-serif;
+    font-size:3vw;
+    text-align:center;
+    color:#333;
+}
+
+.label{
+    position:relative;
+    top:80vh;
+}
+
+.space{
+    position:relative;
+    width:40vw;
+    border-bottom:#555 2px solid;
+}
+
+.stage{
+    width:100%;
+}
+
+.s-one{
+    left:30vw;
+    top:30vh;
+}
+
+p.one{
+    top:0vh;
+}
+
+.item{
+    display:inline-block;
+    cursor:pointer;
+	position:relative;
+    width:3em;
+}
+
+.item img{
+    width:100%;
+}
+
+
+/** STAGE TWO */
+p.one{
+    top:30vh;
+}
+
+.s-one{
+    left:30vw;
+    top:80vh;
+}
+
+#you{
+    top:30vh;
+    left:0;
+}
+#one{
+    top:40vh;
+    left:-24vw;
+}
+#two{
+    top:40vh;
+    left:24vw;
+}
+
+
+/*** second line of stage two*/
+
+#a-one{
+    top:50vh;
+    left:-32vw;
+}
+
+#a-two{
+    top:50vh;
+    left:-12vw;
+}
+
+#b-one{
+    top:50vh;
+    left:12vw;
+}
+
+#b-two{
+    top:50vh;
+    left:32vw;
+}
+
+
+/*** third line of stage two*/
+#a-one-first{
+    top:60vh;
+    left:-30vw;
+}
+#a-one-second{
+    top:60vh;
+    left:-22vw;
+}
+#a-two-first{
+    top:60vh;
+    left:-14vw;
+}
+#a-two-second{
+    top:60vh;
+    left:-6vw;
+}
+#b-one-first{
+    top:60vh;
+    left:6vw;
+}
+#b-one-second{
+    top:60vh;
+    left:14vw;
+}
+#b-two-first{
+    top:60vh;
+    left:22vw;
+}
+#b-two-second{
+    top:60vh;
+    left:30vw;
+}
+
+
+
+/** fourth line of stage two*/
+#a-one-first-1{
+    top:70vh;
+    left:-17vw;
+}
+#a-one-first-2{
+    top:70vh;
+    left:-16.2vw;
+}
+#a-one-second-1{
+    top:70vh;
+    left:-12.9vw;
+}
+#a-one-second-2{
+    top:70vh;
+    left:-12vw;
+}
+#a-two-first-1{
+    top:70vh;
+    left:-9vw;
+}
+#a-two-first-2{
+    top:70vh;
+    left:-7.5vw;
+}
+#a-two-second-1{
+    top:70vh;
+    left:-5vw;
+}
+#a-two-second-2{
+    top:70vh;
+    left:-3.3vw;
+}
+#b-one-first-1{
+    top:70vh;
+    left:3vw;
+}
+#b-one-first-2{
+    top:70vh;
+    left:5vw;
+}
+#b-one-second-1{
+    top:70vh;
+    left:7.5vw;
+}
+#b-one-second-2{
+    top:70vh;
+    left:9vw;
+}
+#b-two-first-1{
+    top:70vh;
+    left:11.9vw;
+}
+#b-two-first-2{
+    top:70vh;
+    left:13vw;
+}
+#b-two-second-1{
+    top:70vh;
+    left:16vw;
+}
+#b-two-second-2{
+    top:70vh;
+    left:17vw;
+}
+
+.s-one1{
+    top:90vh;
+    left:30vw;
+}
+/*** END of stage two*/
