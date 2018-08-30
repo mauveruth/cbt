@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Home - Splendour's Leisure</title>
+	<link type="text/css" media='(max-width: 500px)' rel="stylesheet" href="home-mobile.css" />
+	<link type="text/css" media='(min-width: 500px)' rel='stylesheet' href='home.css' />
+	<link type="text/css" media='(min-width: 500px)' rel='stylesheet' href='desktop/navbar.css' />
+	<meta name="description" content="homepage">
+	<link rel="shortcut icon" href="pictures/logo.png" type="image/png">
+	<meta charset="UTF-8">
+	<meta name="author" content="Joshua Equere">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Muli|Quicksand|Comfortaa" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+<div class="desktop">
+	<!--- (menu)-->
+	<div id="sideNav" class="sidenav">
+		<a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+		<a class="active" href="home.html"><i class="fas fa-home"></i><br />HOME</a>
+		<a href="services.html"><i class="fas fa-chart-line"></i><br />SERVICES</a>
+		<a href="about.html"><i class="fas fa-info-circle"></i><br />ABOUT</a>
+		<a href="contact.html"><i class="fas fa-user"></i><br />CONTACT</a>
+	</div>
+
+	<span onclick="openNav()" class="menu">&#9776;</span>
+
+	<script>
+		function openNav() {
+		    document.getElementById("sideNav").style.width = "10%";
+		}
+
+		function closeNav() {
+		    document.getElementById("sideNav").style.width = "0";
+		}
+	</script>
+
+	<img class="logo" style="width:8%" src="pictures/logo.png" />
+	<!--- END! (menu)-->
+
+
+
+	<!--- (body)-->
+	<div class="background"></div>
+
+	<div class="slide-container">
+	  <img class="mySlides slides" src="pictures/home2/1.jpg" style="width:100%">
+	  <img class="mySlides slides" src="pictures/home2/2.jpeg" style="width:100%">
+	  <img class="mySlides slides" src="pictures/home2/3.jpeg" style="width:100%">
+	  <img class="mySlides slides" src="pictures/home2/4.jpeg" style="width:100%">
+	  <img class="mySlides slides" src="pictures/home2/5.jpeg" style="width:100%">
+	</div>
+
+	<script>
+		var myIndex = 0;
+		carousel();
+		
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+			   x[i].style.display = "none";  
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}    
+			x[myIndex-1].style.display = "block";  
+			setTimeout(carousel, 9000);    
+		}
+	</script>
+
+	<div onclick="location.href='about.html';" id="toggle" class="text-out">
+		<div class="text"></div>
+		<a class="arrow"><i class="fas fa-sort-down"></i></a>
+	</div>
+
+	<div class="copyright">
+		<p><i class="far fa-copyright"></i> 2018 SPLENDOUR'S LEISURE | DESIGNED BY <a href="http://joshsam.info" style="text-decoration:none; color:#ff0">JOSHUA EQUERE</a></p>
+	</div>
+	<!--- END! (body)-->
+</div>
+
+
+
+
+
+
+
+<div class="mobile">
+	<!--- (menu)-->
+	<div id="sideNav1" class="sidenav">
+			<a href="javascript:void(0)" class="close" onclick="closeNav1()">&times;</a>
+			<a href="home.html" class="active"><i class="fas fa-home"></i><br />HOME</a>
+			<a href="services.html"><i class="fas fa-chart-line"></i><br />SERVICES</a>
+			<a href="about.html"><i class="fas fa-info-circle"></i><br />ABOUT</a>
+			<a href="contact.html"><i class="fas fa-user"></i><br />CONTACT</a>
+		</div>
+	
+		<div onclick="openNav1()" class="menu"><span>&#9776;</span></div>
+	
+		<script>
+			function openNav1() {
+				document.getElementById("sideNav1").style.height = "100%";
+			}
+	
+			function closeNav1() {
+				document.getElementById("sideNav1").style.height = "0";
+			}
+		</script>
+	
+		<img class="logo" src="pictures/logo.png" />
+		<!--- END! (menu)-->
+	
+	
+	
+		<!--- (body)-->
+		<div class="head">
+			<a id="w">W</a>
+			<a id="e">E</a>
+			<a id="l">L</a>
+			<a id="c">C</a>
+			<a id="o">O</a>
+			<a id="m">M</a>
+			<a id="e1">E</a>
+
+			<script>
+				setTimeout(function(){
+					document.getElementById('w').style.left = '7%'; // new left position is 1000px in this example
+					document.getElementById('o').style.left = '31%'; // new left position is 1000px in this example
+				}, 1000); // 2000 = 2 seconds
+
+				setTimeout(function(){
+					document.getElementById('e').style.left = '16%'; // new left position is 1000px in this example
+					document.getElementById('m').style.left = '37%'; // new left position is 1000px in this example
+				}, 1500); // 2000 = 2 seconds
+
+				setTimeout(function(){
+					document.getElementById('l').style.left = '21%'; // new left position is 1000px in this example
+					document.getElementById('e1').style.left = '43.5%'; // new left position is 1000px in this example
+				}, 2000); // 2000 = 2 seconds
+
+				setTimeout(function(){
+					document.getElementById('c').style.left = '25.5%'; // new left position is 1000px in this example
+				}, 2500); // 2000 = 2 seconds
+			</script>
+
+		</div>
+
+
+		<div class="background">
+			<img src="pictures/home-mobile.png" />
+		</div>
+
+		<div onclick="location.href='about.html';" class="text">
+			<a class="arrow"><i class="fas fa-sort-down"></i></a>
+		</div>
+
+		<div class="copyright">
+			<p><i class="far fa-copyright"></i> 2018 SPLENDOUR'S LEISURE | DESIGNED BY <a href="http://joshsam.info" style="color:#ffff00; text-decoration:none;">JOSHUA EQUERE</a></p>
+		</div>
+		<!--- END! (body)-->
+	
+</div>
+
+</body>
